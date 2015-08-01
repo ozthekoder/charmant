@@ -1,0 +1,78 @@
+{
+    "PATH": "\/rooms",
+    "SOCIAL_ICON1": "http:\/\/www.facebook.com\/charmant\/",
+    "SOCIAL_ICON2": "http:\/\/twitter.com\/charmant\/",
+    "SOCIAL_ICON3": "http:\/\/instagram.com\/charmant\/",
+    "PAGETITLE": "Charmant | Rooms",
+    "META_DESCRIPTION": "Charmant Description",
+    "META_KEYWORDS": "Charmant Keywords",
+    "H1": "",
+    "BLURB1": "",
+	"BUTTONSWITCH1":0,
+	"BUTTONLINK1":"",
+	"BUTTONTEXT1":"",
+    "CHILDREN": [
+        {
+            "SORTORDER": 1,
+            "IMAGE_ALT_TEXT": "Classic Salle King",
+            "H1": "Classic Salle King",
+    		"BLURB1": "<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.<\/p>",
+            "LINKSWITCH": 0,
+            "LINK": "",
+            "IMAGE": "\/content\/slides\/thumb1.jpg",
+    		"PATH": "\/rooms\/classic-salle-king"
+        },
+        {
+            "SORTORDER": 2,
+            "IMAGE_ALT_TEXT": "Classic Salle Queen\/Queen",
+            "H1": "Classic Salle Queen\/Queen",
+    		"BLURB1": "<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.<\/p>",
+            "LINKSWITCH": 0,
+            "LINK": "",
+            "IMAGE": "\/content\/slides\/thumb2.jpg",
+    		"PATH": "\/rooms\/classic-salle-queen-queen"
+        },
+        {
+            "SORTORDER": 3,
+            "IMAGE_ALT_TEXT": "River View King",
+            "H1": "River View King",
+    		"BLURB1": "<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.<\/p>",
+            "LINKSWITCH": 0,
+            "LINK": "",
+            "IMAGE": "\/content\/slides\/thumb3.jpg",
+    		"PATH": "\/rooms\/river-view-king"
+        },
+        {
+            "SORTORDER": 4,
+            "IMAGE_ALT_TEXT": "Classic Chateau King",
+            "H1": "Classic Chateau King",
+    		"BLURB1": "<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.<\/p>",
+            "LINKSWITCH": 0,
+            "LINK": "",
+            "IMAGE": "\/content\/slides\/thumb4.jpg",
+    		"PATH": "\/rooms\/classic-salle-king"
+        },
+        {
+            "SORTORDER": 5,
+            "IMAGE_ALT_TEXT": "Luxe Junior Suite",
+            "H1": "Luxe Junior Suite",
+    		"BLURB1": "<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.<\/p>",
+            "LINKSWITCH": 0,
+            "LINK": "",
+            "IMAGE": "\/content\/slides\/thumb5.jpg",
+    		"PATH": "\/rooms\/classic-salle-king"
+        },
+        {
+            "SORTORDER": 6,
+            "IMAGE_ALT_TEXT": "Grand Salle",
+            "H1": "Grand Salle",
+    		"BLURB1": "<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.<\/p>",
+            "LINKSWITCH": 0,
+            "LINK": "",
+            "IMAGE": "\/content\/slides\/thumb6.jpg",
+    		"PATH": "\/rooms\/classic-salle-king"
+        }
+    ],
+    "SLIDES": [],
+    "TEMPLATE": "landing"
+}
