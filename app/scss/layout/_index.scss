@@ -1,3 +1,8 @@
+$susy: (
+  columns: 12,  // The number of columns in your grid
+  gutters: 0, // The size of a gutter in relation to a single column
+);
+
 html, body {
   background: #000;
 }
@@ -86,35 +91,165 @@ html, body, .container {
     right: 0;
     top: 50px;
     margin: auto;
-    max-width: 1000px;
     ul {
       list-style: none;
+      width: calc(100% - 315px);
+      margin-left: 10px;
 
       li {
         float: left;
-        padding: 10px 15px;
-        width: 14%;
-        text-align: center;
+        padding: 8px 7px;
          a {
            text-shadow: 0px 2px 3px rgba(0,0,0,0.4);
            font-family: DarbySans-Light;
            color: #fff;
            text-decoration: none;
-           font-size: 14px;
+           font-size: 12px;
            cursor: pointer;
            text-transform: uppercase;
          }
-
-         &.bookNowButton {
-           background: url(/content/bookNowButton.png) no-repeat;
-           background-position: 0 0;
-           background-size: 100%;
-           width: 140px;
-           a{
-             font-family: DarbySansPoster-XLight;
-           }
-         }
       }
+
+      @include mq($break-point-2) {
+        li {
+          padding: 8px 2px;
+          text-align: center;
+          width: 16%;
+          a{
+              font-size: 11px;
+          }
+
+        }
+      }
+
+
+      @include mq($break-point-1) {
+        li {
+          width: 16%;
+          text-align: center;
+
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+
+
+
+
+    }
+
+    .booking-calendar {
+
+      text-align: center;
+      background: url(/content/bookNowButton.png) no-repeat;
+      background-position: 0 0;
+      background-size: 100%;
+      width: 140px;
+      float: right;
+      min-height: 40px;
+      margin-right: 80px;
+      font-family: DarbySansPoster-XLight;
+      color: #fff;
+      & > a{
+
+        color: #fff;
+        padding: 9px;
+        display: block;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+      &.open {
+        width: 260px;
+        background: #000;
+        border-image-source: url(/content/calendar_frame.png);
+        border-image-slice: 10;
+        border-image-width: 10px;
+        border-image-outset: 1;
+        background-size: 100% 100%;
+        padding: 10px;
+        margin-right: 20px;
+
+        .calendarHeading {
+          display: block;
+          text-align: center;
+          padding: 10px 0px
+        }
+
+        & > a {
+          margin-top: -13px;
+        }
+      }
+
+      .calendarWrapper {
+
+        .date-picker {
+          background: #000;
+          color: #fff;
+          font-size: 12px;
+          table {
+            margin: 0 auto;
+          }
+
+          .dp-month-view {
+            font-size: 14px;
+          }
+
+          .dp-decade-view {
+            font-size: 16px;
+          }
+
+          .dp-nav-cell {
+            color: #000;
+            border-color: #A68451;
+            display: block;
+            &.dp-prev-nav {
+              width: 0;
+            	height: 0;
+            	border-top: 5px solid transparent;
+            	border-bottom: 5px solid transparent;
+            	border-right:5px solid #A68451;
+              padding: 0;
+              margin-top: 5px;
+              margin-right: 5px;
+            }
+
+            &.dp-next-nav {
+              width: 0;
+            	height: 0;
+            	border-top: 5px solid transparent;
+            	border-bottom: 5px solid transparent;
+            	border-left: 5px solid #A68451;
+              padding: 0;
+              margin-top: 5px;
+              margin-left: 5px;
+            }
+          }
+
+          .dp-cell {
+
+            &.dp-disabled {
+              color: #9f9f9f;
+            }
+            cursor: pointer;
+            padding: 4px;
+
+            &:active, &:focus {
+              background: #A68451;
+            }
+
+            &:first-child {
+
+            }
+
+            &:last-child {
+
+            }
+          }
+        }
+      }
+
+
     }
   }
 }

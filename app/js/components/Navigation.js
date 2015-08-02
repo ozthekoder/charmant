@@ -23,9 +23,8 @@ var Navigation = React.createClass({
       return (<li><a href={'#' + item.PATH}>{item.LINKTITLE}</a></li>)
     })
 
-    listItems.push(<BookNowButton/>);
     return (
-      <div className="navigation"><ul>{listItems}</ul></div>
+      <div className="navigation"><ul>{listItems}</ul><BookNowButton /></div>
     )
   }
 });

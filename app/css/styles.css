@@ -453,30 +453,107 @@ html, body, .container {
   left: 0;
   right: 0;
   top: 50px;
-  margin: auto;
-  max-width: 1000px; }
+  margin: auto; }
   #app .navigation ul {
-    list-style: none; }
+    list-style: none;
+    width: calc(100% - 315px);
+    margin-left: 10px; }
     #app .navigation ul li {
       float: left;
-      padding: 10px 15px;
-      width: 14%;
-      text-align: center; }
+      padding: 8px 7px; }
       #app .navigation ul li a {
         text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
         font-family: DarbySans-Light;
         color: #fff;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 12px;
         cursor: pointer;
         text-transform: uppercase; }
-      #app .navigation ul li.bookNowButton {
-        background: url(/content/bookNowButton.png) no-repeat;
-        background-position: 0 0;
-        background-size: 100%;
-        width: 140px; }
-        #app .navigation ul li.bookNowButton a {
-          font-family: DarbySansPoster-XLight; }
+    @media screen and (min-width: 768px) {
+      #app .navigation ul li {
+        padding: 8px 2px;
+        text-align: center;
+        width: 16%; }
+        #app .navigation ul li a {
+          font-size: 11px; } }
+    @media screen and (min-width: 1024px) {
+      #app .navigation ul li {
+        width: 16%;
+        text-align: center; }
+        #app .navigation ul li a {
+          font-size: 14px; } }
+  #app .navigation .booking-calendar {
+    text-align: center;
+    background: url(/content/bookNowButton.png) no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+    width: 140px;
+    float: right;
+    min-height: 40px;
+    margin-right: 80px;
+    font-family: DarbySansPoster-XLight;
+    color: #fff; }
+    #app .navigation .booking-calendar > a {
+      color: #fff;
+      padding: 9px;
+      display: block;
+      cursor: pointer;
+      text-transform: uppercase; }
+    #app .navigation .booking-calendar.open {
+      width: 260px;
+      background: #000;
+      border-image-source: url(/content/calendar_frame.png);
+      border-image-slice: 10;
+      border-image-width: 10px;
+      border-image-outset: 1;
+      background-size: 100% 100%;
+      padding: 10px;
+      margin-right: 20px; }
+      #app .navigation .booking-calendar.open .calendarHeading {
+        display: block;
+        text-align: center;
+        padding: 10px 0px; }
+      #app .navigation .booking-calendar.open > a {
+        margin-top: -13px; }
+    #app .navigation .booking-calendar .calendarWrapper .date-picker {
+      background: #000;
+      color: #fff;
+      font-size: 12px; }
+      #app .navigation .booking-calendar .calendarWrapper .date-picker table {
+        margin: 0 auto; }
+      #app .navigation .booking-calendar .calendarWrapper .date-picker .dp-month-view {
+        font-size: 14px; }
+      #app .navigation .booking-calendar .calendarWrapper .date-picker .dp-decade-view {
+        font-size: 16px; }
+      #app .navigation .booking-calendar .calendarWrapper .date-picker .dp-nav-cell {
+        color: #000;
+        border-color: #A68451;
+        display: block; }
+        #app .navigation .booking-calendar .calendarWrapper .date-picker .dp-nav-cell.dp-prev-nav {
+          width: 0;
+          height: 0;
+          border-top: 5px solid transparent;
+          border-bottom: 5px solid transparent;
+          border-right: 5px solid #A68451;
+          padding: 0;
+          margin-top: 5px;
+          margin-right: 5px; }
+        #app .navigation .booking-calendar .calendarWrapper .date-picker .dp-nav-cell.dp-next-nav {
+          width: 0;
+          height: 0;
+          border-top: 5px solid transparent;
+          border-bottom: 5px solid transparent;
+          border-left: 5px solid #A68451;
+          padding: 0;
+          margin-top: 5px;
+          margin-left: 5px; }
+      #app .navigation .booking-calendar .calendarWrapper .date-picker .dp-cell {
+        cursor: pointer;
+        padding: 4px; }
+        #app .navigation .booking-calendar .calendarWrapper .date-picker .dp-cell.dp-disabled {
+          color: #9f9f9f; }
+        #app .navigation .booking-calendar .calendarWrapper .date-picker .dp-cell:active, #app .navigation .booking-calendar .calendarWrapper .date-picker .dp-cell:focus {
+          background: #A68451; }
 
 .socialSection {
   position: absolute;
