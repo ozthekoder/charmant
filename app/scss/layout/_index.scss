@@ -118,3 +118,23 @@ html, body, .container {
     }
   }
 }
+
+.socialSection {
+  position: absolute;
+  bottom: 15px;
+  right: 50px;
+  .socialButton {
+    margin: 0px 5px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+    display: block;
+    float: left;
+    width: 20px;
+    height:20px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

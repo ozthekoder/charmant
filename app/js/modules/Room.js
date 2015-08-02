@@ -1,5 +1,6 @@
 var React = require('react');
 var DataProxy = require('../DataProxy');
+var SocialButton = require('../components/SocialButton');
 
 var dataProxy = new DataProxy();
 
@@ -12,7 +13,10 @@ var Room = React.createClass({
         },
         title: data.PAGETITLE,
         keywords: data.META_KEYWORDS,
-        description: data.META_DESCRIPTION
+        description: data.META_DESCRIPTION,
+        facebookUrl : data.SOCIAL_ICON1,
+        twitterUrl : data.SOCIAL_ICON2,
+        instagramUrl : data.SOCIAL_ICON3
       })
 
       $('head meta[name="keywords"]').attr('content', this.state.keywords);
@@ -29,6 +33,11 @@ var Room = React.createClass({
   render: function (){
     return (
       <div className="container page" style={this.state.style}>
+      <div className="socialSection">
+        <SocialButton url={this.state.facebookUrl} type={'facebook'} />
+        <SocialButton url={this.state.twitterUrl} type={'twitter'} />
+        <SocialButton url={this.state.instagramUrl} type={'instagram'} />
+      </div>
       </div>
     );
   }

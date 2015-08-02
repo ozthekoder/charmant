@@ -1,6 +1,7 @@
 var React = require('react');
 var DataProxy = require('../DataProxy');
 var $ = require('jquery');
+var SocialButton = require('../components/SocialButton');
 
 var dataProxy = new DataProxy();
 
@@ -14,7 +15,10 @@ var Home = React.createClass({
         title: data.PAGETITLE,
         keywords: data.META_KEYWORDS,
         description: data.META_DESCRIPTION,
-        headline: data.SLIDES[0].H1
+        headline: data.SLIDES[0].H1,
+        facebookUrl : data.SOCIAL_ICON1,
+        twitterUrl : data.SOCIAL_ICON2,
+        instagramUrl : data.SOCIAL_ICON3
       })
 
       $('head meta[name="keywords"]').attr('content', this.state.keywords);
@@ -32,6 +36,11 @@ var Home = React.createClass({
     return (
       <div className="container page" style={this.state.style}>
         <h1>{this.state.headline}</h1>
+        <div className="socialSection">
+          <SocialButton url={this.state.facebookUrl} type={'facebook'} />
+          <SocialButton url={this.state.twitterUrl} type={'twitter'} />
+          <SocialButton url={this.state.instagramUrl} type={'instagram'} />
+        </div>
       </div>
     );
   }

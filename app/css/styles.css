@@ -478,6 +478,23 @@ html, body, .container {
         #app .navigation ul li.bookNowButton a {
           font-family: DarbySansPoster-XLight; }
 
+.socialSection {
+  position: absolute;
+  bottom: 15px;
+  right: 50px; }
+  .socialSection .socialButton {
+    margin: 0px 5px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    cursor: pointer; }
+    .socialSection .socialButton:hover {
+      opacity: 0.5; }
+
 @font-face {
   font-family: "DarbySans-Light";
   src: url("font/DarbySans-Light.eot");
