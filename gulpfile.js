@@ -1,6 +1,7 @@
 var gulp        = require('gulp');
 var gutil       = require('gulp-util');
 var sass        = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
 var source      = require('vinyl-source-stream');
 var babelify    = require('babelify');
 var watchify    = require('watchify');
@@ -52,6 +53,10 @@ gulp.task('watch-sass', function () {
 gulp.task('sass', function() {
     return gulp.src(src.scss)
         .pipe(sass())
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(gulp.dest(src.css))
         .pipe(reload({stream: true}));
 });

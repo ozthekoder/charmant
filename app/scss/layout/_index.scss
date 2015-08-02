@@ -1,0 +1,120 @@
+html, body {
+  background: #000;
+}
+html, body, .container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.logo {
+   img {
+     width: 18%;
+     position:absolute;
+     right:0;
+     left: 0;
+     top:0;
+     margin: auto;
+     display: block;
+     cursor: pointer;
+   }
+}
+
+.page {
+  background: url(/content/slides/home.jpg) no-repeat center center fixed;
+  background-size: cover;
+  border-image-source: url(/content/slides/border.png);
+  border-image-slice: 40;
+  border-image-width: 25px;
+  border-image-outset: 1;
+  box-shadow: inset 0 0 10em #000;
+
+  h1 {
+    font-weight: normal;
+    font-family: 'DarbySansPoster-Light';
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding: 12px 0px;
+    width: 300px;
+    height: auto;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    margin: auto;
+    max-height: 90px;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.4);
+  }
+}
+
+#app {
+  .footer {
+    position: absolute;
+    bottom: 15px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    font-size: 10px;
+    color: #BDBDBD;
+    font-family: 'DarbySans-Light';
+    font-weight: normal;
+    width: 520px;
+    ul {
+      list-style: none;
+
+      li {
+        float: left;
+        padding: 5px 20px;
+
+        border-right: 1px solid #BDBDBD;
+        text-shadow: 0px 2px 3px rgba(0,0,0,0.4);
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  .navigation {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    margin: auto;
+    max-width: 1000px;
+    ul {
+      list-style: none;
+
+      li {
+        float: left;
+        padding: 10px 15px;
+        width: 14%;
+        text-align: center;
+         a {
+           text-shadow: 0px 2px 3px rgba(0,0,0,0.4);
+           font-family: DarbySans-Light;
+           color: #fff;
+           text-decoration: none;
+           font-size: 14px;
+           cursor: pointer;
+           text-transform: uppercase;
+         }
+
+         &.bookNowButton {
+           background: url(/content/bookNowButton.png) no-repeat;
+           background-position: 0 0;
+           background-size: 100%;
+           width: 140px;
+           a{
+             font-family: DarbySansPoster-XLight;
+           }
+         }
+      }
+    }
+  }
+}
